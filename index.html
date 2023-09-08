@@ -33,17 +33,30 @@
             <div class="row">
 
               <div class="col-12">
-                <input type="text" placeholder="scrivi" id="name"> 
-                <input type="text" placeholder="scrivi" id="distance">
+
+                <form action="#" method="post">
+
+                  <input id="fullname" type="text" placeholder="scrivi"> 
+
+                  <input id="distance" type="number" placeholder="scrivi">
+
+                  <select id="age">
+                    <option selected>Select</option>
+                    <option value="young">Minorenne</option>
+                    <option value="adult">Maggiorenne</option>
+                    <option value="elder">Over 65</option>
+                  </select>
+                  
+                </form>
+
               </div>
 
               <div class="col-12 mt-3">
-                <button class="btn btn-success">genera</button>
+                <button id="generate-button" class="btn btn-success">Genera</button>
               </div>
 
             </div>
           </div>
-
         </div>
   
       </div>
