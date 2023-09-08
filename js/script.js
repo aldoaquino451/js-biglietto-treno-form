@@ -18,6 +18,12 @@ const euroKm = 0.21;
 // calculator
 const intialCost = distance * euroKm;
 let finalCost;
+//
+const ticket = document.querySelector('#ticket')
+const price = document.querySelector('#price')
+const passenger = document.querySelector('#passenger')
+const carriage = document.querySelector('#carriage')
+const seat = document.querySelector('#seat')
 
 generate.addEventListener('click', function(){
 
@@ -37,8 +43,19 @@ generate.addEventListener('click', function(){
 
   console.log(finalCost)
 
+  ticket.classList.remove('hidden')
+
+  price.innerHTML =+ finalCost;
+  passenger.innerHTML = fullname;
+  carriage.innerHTML = Math.floor((Math.random() * 9) + 1);
+  seat.innerHTML = Math.floor((Math.random() * 60) + 1);
+
+
+
 
 });
+
+
 
 
 
